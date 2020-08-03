@@ -1,0 +1,52 @@
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+    "name": "Exemplo",
+    "email": "exemplo@email.com.r"
+}
+
+###
+
+GET http://localhost:3333/users
+
+###
+
+POST http://localhost:3333/users/3/addresses
+Content-Type: application/json
+
+{
+    "zipcode": "91283709",
+    "street": "Rua Exemplo",
+    "number": 130       
+}
+
+###
+
+GET http://localhost:3333/users/3/addresses
+
+###
+
+POST http://localhost:3333/users/3/techs
+Content-Type: application/json
+
+{
+    "name": "react native"
+}
+
+###
+
+DELETE http://localhost:3333/users/1/techs
+Content-Type: application/json
+
+{
+    "name": "react native"
+}
+
+###
+
+GET http://localhost:3333/users/3/techs
+
+###
+
+GET http://localhost:3333/report
